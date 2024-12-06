@@ -4,7 +4,7 @@ st.set_page_config(page_title='Portfolio')
 
 st.header('Aravindh\'s Portfolio')
 
-st.subheader('My Bio')
+st.subheader('Bio')
 
 st.markdown('Name : Aravindh.P')
 st.markdown('Studies : 1st Year AI&DS')
