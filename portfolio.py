@@ -1,23 +1,35 @@
 import streamlit as st
 
 st.set_page_config(page_title='Portfolio')
+c1,c2,c3=st.columns([1,1,1])
+with c2:
+    st.header('Hi, I am Aravindh')
 
-st.header('Aravindh\'s Portfolio')
+st.header('Who Am I?')
+st.write('Erode,Tamilnadu,India')
+st.header('17 YEARS OLD')
+c1,c2,c3=st.columns([1,1,1])
+with c3:
+    st.header('About Me')
+c1,c2=st.columns([1,10])
+with c2:
+    st.markdown('I am Aravindh from Erode, Currently pursuing B.Tech Artificial Intelligence& Data Science 1st year in K.S.Rangasamy College of Technology.')
 
-st.subheader('Bio')
 
-st.markdown('Name : Aravindh.P')
-st.markdown('Studies : 1st Year AI&DS')
-st.markdown('College : K.S.Rangasamy College of Technology ,KSR Kalvi Nagar,Tirchungode - 638215')
-
-st.subheader('Skills')
-st.subheader('Projects')
+    st.markdown('I am always interest in developing my skills')
+st.header('Skills')
+st.header('Projects')
 col1,col2=st.columns([1,10])
 with col1:
     pass
 with col2:
-    st.markdown('AI Chatbot')
-    st.text('Still in a project . Not yet  completed')
+    st.subheader('AI Chatbot')
+    st.markdown('Still working in this project . Not yet  completed')
+
+st.header('Experiences')
+st.header('Awards')
+st.header('Achievements')
+
 
 if st.checkbox('Rate my portfolio'):
     st.radio('choose',('Perfect','Excellent','Good','Not Satisfied','Bad'))
